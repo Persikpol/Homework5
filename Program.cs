@@ -58,19 +58,19 @@ Sum(Arr);
 
 // Task 38
 
-double[] array = new double[size];
+double[] array = {1.2, 3.1, 4.69, 6.25, 1.333, 2.56956}; // new double[size];
 double Min = 0;
 double Max = 0;
 
-void FillArray1(double[] nums)
-{
-    Random rand = new Random();
-    for (int i = 0; i < nums.Length; i++)
-    {
-        nums[i] = Convert.ToDouble(rand.Next(0, 100));
-        Console.Write(nums[i] + "  ");
-    }
-}
+// void FillArray1(double[] nums)
+// {
+//     // Random rand = new Random();
+//     for (int i = 0; i < nums.Length; i++)
+//     {
+//         nums[i] = Convert.ToDouble(rand.Next(0, 100));
+//         Console.Write(nums[i] + "  ");
+//     }
+// }
 
 double MaxNumber(double[] nums)
 {
@@ -101,7 +101,7 @@ double MinNumber(double[] nums)
 }
 
 
-FillArray1(array);
+// FillArray1(array);
 MaxNumber(array);
 MinNumber(array);
 Console.WriteLine($"Разница = {MaxNumber(array) - MinNumber(array)}" );
